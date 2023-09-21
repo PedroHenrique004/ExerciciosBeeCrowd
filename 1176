@@ -1,0 +1,31 @@
+#include <stdio.h>
+
+int main (){
+    int tamanhoVetor, valor, menor, posMenor;
+    scanf("%d", &tamanhoVetor);
+
+    int vetor [tamanhoVetor];
+
+    for (int posicao = 0; posicao < tamanhoVetor; posicao++){
+        scanf("%d", &valor);
+        vetor[posicao] = valor;
+    }   
+
+    menor = vetor[0];
+    posMenor = 0;
+
+    for(int posicao = 1; posicao < tamanhoVetor; posicao++){
+        if (vetor[posicao] < menor){
+            menor = vetor[posicao]
+            posMenor = posicao;
+
+        }
+    }    
+
+    printf("Menor valor: %d \n", menor);
+    printf("Posicao: %d \n", posMenor);
+
+
+
+    return 0;
+}
