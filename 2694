@@ -7,12 +7,12 @@ int main(){
 
     char textoLinha[15];
 
-    for (i = 0; i <= numLinhas; i++){
+    for (int i = 0; i <= numLinhas; i++){
         scanf("%s", &textoLinha);
 
-        char    valor1[3] = {textoLinha[2], textoLinha[3], '\0'};
-        char    valor2[4] = {textoLinha[5], textoLinha[6], textoLinha[7], '\0'};
-        char    valor3[5] = {textoLinha[12], textoLinha[13], '\0'};
+        char valor1[3] = {textoLinha[2], textoLinha[3], '\0'};
+        char valor2[4] = {textoLinha[5], textoLinha[6], textoLinha[7], '\0'};
+        char valor3[5] = {textoLinha[12], textoLinha[13], '\0'};
 
         printf("%d\n", atoi(valor1), atoi(valor2),atoi(valor3));
 
